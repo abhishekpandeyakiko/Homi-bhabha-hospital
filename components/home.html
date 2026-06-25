@@ -1,0 +1,1012 @@
+<link rel="stylesheet" href="assets/scss/home.css">
+<main class="pt-0">
+  <!-- ===================================================
+         HERO SECTION (Redesigned Card Slider to Match Mediic Theme Exactly)
+    ==================================================== -->
+  <section class="custom-hero-section w-full relative overflow-hidden bg-transparent">
+    <!-- Outer box matching the screenshot's card layout with flex-col -->
+    <div class="relative bg-[#031A3E] overflow-hidden flex flex-col hero-grid-bg">
+
+      <!-- TOP WORKSPACE FOR SLIDER (Helpline, Socials, Slides, Dots relative to this) -->
+      <div class="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center">
+
+        <!-- LEFT HELPLINE (Vertical) -->
+        <div
+          class="absolute left-6 lg:left-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6 z-30 pointer-events-none">
+          <div class="w-[1px] h-20 bg-slate-500/50"></div>
+          <span class="vertical-rl transform rotate-180 text-slate-400 text-xs font-bold tracking-widest leading-none">
+            +91 172 2290100
+          </span>
+        </div>
+
+        <!-- RIGHT SOCIALS (Vertical) -->
+        <div class="absolute right-6 lg:right-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-6 z-30">
+          <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+              class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+              class="fa-brands fa-linkedin-in text-sm"></i></a>
+          <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+              class="fa-brands fa-x-twitter text-sm"></i></a>
+          <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+              class="fa-brands fa-pinterest text-sm"></i></a>
+          <button
+            class="w-7 h-7 rounded-full border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:border-white transition-all text-xs">
+            <i class="fa-solid fa-plus text-[10px]"></i>
+          </button>
+        </div>
+
+        <!-- SLIDES WRAPPER -->
+        <div class="w-full relative min-h-[580px] lg:min-h-[640px] flex items-center" id="heroSlider">
+
+          <!-- ==================== SLIDE 1 ==================== -->
+          <div
+            class="hero-slide active w-full px-12 lg:px-24 flex flex-col lg:grid lg:grid-cols-12 gap-8 items-center absolute inset-0 transition-all duration-700 opacity-0 pointer-events-none scale-95 flex items-center justify-center">
+            <!-- Text column -->
+            <div class="lg:col-span-7 space-y-6 text-left relative z-10 select-none">
+              <h1
+                class="text-4xl md:text-6xl lg:text-[76px] font-black leading-[1.05] text-white tracking-tight uppercase">
+                COMPREHENSIVE <span class="inline-block animate-pulse text-red-500 font-sans">❤️</span><br />
+                <span class="text-white">CANCER CARE</span>
+              </h1>
+
+              <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl p-4 max-w-md">
+                <span
+                  class="w-8 h-8 rounded-full bg-[#0B63E5] flex items-center justify-center text-white flex-shrink-0">
+                  <i class="fa-solid fa-hospital text-xs"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Dedicated Tumor Boards</h4>
+                  <p class="text-slate-300 text-[13px] leading-snug">Multidisciplinary teams providing personalized
+                    treatment plans for every patient.</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 pt-4">
+                <a href="#appointment-section"
+                  class="bg-[#0B63E5] hover:bg-[#094eb5] text-white px-8 py-3.5 rounded-full font-bold text-xs transition-all shadow-md flex items-center gap-2 hover:scale-105">
+                  Free Consultation <span class="text-[10px]">&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Doctor Image column -->
+            <div class="lg:col-span-5 flex items-center justify-center relative w-full h-full min-h-[300px] lg:min-h-0">
+              <!-- Background decorative details -->
+              <div
+                class="absolute top-[20%] left-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+              <div
+                class="absolute bottom-[20%] right-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+
+              <!-- Doctor cutout image -->
+              <img src="assets/img/doctor_hero.png" alt="Doctor"
+                class="w-[320px] h-[420px] sm:w-[380px] sm:h-[480px] lg:w-[460px] lg:h-[560px] object-cover object-top z-10 drop-shadow-2xl select-none border-8 border-white/10 rounded-[15px] bg-slate-800/40 backdrop-blur-sm" />
+
+              <!-- Floating 3k member badge -->
+              <div
+                class="absolute left-4 lg:left-0 top-[40%] z-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 flex items-center gap-2 shadow-lg scale-90 lg:scale-100">
+                <div class="flex -space-x-2">
+                  <div
+                    class="w-6 h-6 rounded-full border border-white/50 bg-slate-300 flex items-center justify-center overflow-hidden text-[9px] font-bold text-[#0D1B4E]">
+                    DR</div>
+                  <div
+                    class="w-6 h-6 rounded-full border border-white/50 bg-[#0B63E5] flex items-center justify-center overflow-hidden text-[9px] font-bold text-white">
+                    ON</div>
+                  <div
+                    class="w-6 h-6 rounded-full border border-white/50 bg-[#0097A7] flex items-center justify-center overflow-hidden text-[9px] font-bold text-white">
+                    SUR</div>
+                </div>
+                <span class="text-white text-xs font-bold tracking-wide">3k MEMBER</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SLIDE 2 ==================== -->
+          <div
+            class="hero-slide w-full px-12 lg:px-24 flex flex-col lg:grid lg:grid-cols-12 gap-8 items-center absolute inset-0 transition-all duration-700 opacity-0 pointer-events-none scale-95 flex items-center justify-center">
+            <!-- Text column -->
+            <div class="lg:col-span-7 space-y-6 text-left relative z-10 select-none">
+              <h1
+                class="text-4xl md:text-6xl lg:text-[76px] font-black leading-[1.05] text-white tracking-tight uppercase">
+                PIONEERING <span class="inline-block animate-pulse text-[#0097A7] font-sans">🛡️</span><br />
+                <span class="text-white">ONCOLOGY</span>
+              </h1>
+
+              <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl p-4 max-w-md">
+                <span
+                  class="w-8 h-8 rounded-full bg-[#0097A7] flex items-center justify-center text-white flex-shrink-0">
+                  <i class="fa-solid fa-microscope text-xs"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Advanced Technologies</h4>
+                  <p class="text-slate-300 text-[13px] leading-snug">Equipped with the latest radiation, surgical, and
+                    diagnostic advancements.</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 pt-4">
+                <a href="#services-section"
+                  class="bg-[#0097A7] hover:bg-[#007b8a] text-white px-8 py-3.5 rounded-full font-bold text-xs transition-all shadow-md flex items-center gap-2 hover:scale-105">
+                  Our Services <span class="text-[10px]">&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hospital Image column -->
+            <div class="lg:col-span-5 flex items-center justify-center relative w-full h-full min-h-[300px] lg:min-h-0">
+              <!-- Background decorative details -->
+              <div
+                class="absolute top-[20%] left-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+              <div
+                class="absolute bottom-[20%] right-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+
+              <!-- Floating image matching slide 1 -->
+              <img src="assets/img/1.jpg.jpeg" alt="Mullanpur Hospital Building"
+                class="w-[320px] h-[420px] sm:w-[380px] sm:h-[480px] lg:w-[460px] lg:h-[560px] object-cover object-center z-10 drop-shadow-2xl select-none border-8 border-white/10 rounded-[15px] bg-slate-800/40 backdrop-blur-sm" />
+
+              <!-- Floating TMC badge -->
+              <div
+                class="absolute right-4 lg:right-0 bottom-[15%] z-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 flex items-center gap-2 shadow-lg scale-90 lg:scale-100">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-red"></span>
+                <span class="text-white text-xs font-bold tracking-wide">TMC UNIT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SLIDE 3 ==================== -->
+          <div
+            class="hero-slide w-full px-12 lg:px-24 flex flex-col lg:grid lg:grid-cols-12 gap-8 items-center absolute inset-0 transition-all duration-700 opacity-0 pointer-events-none scale-95 flex items-center justify-center">
+            <!-- Text column -->
+            <div class="lg:col-span-7 space-y-6 text-left relative z-10 select-none">
+              <h1
+                class="text-4xl md:text-6xl lg:text-[76px] font-black leading-[1.05] text-white tracking-tight uppercase">
+                COMPASSIONATE <span class="inline-block animate-pulse text-brand-red font-sans">🎀</span><br />
+                <span class="text-white">HEALING</span>
+              </h1>
+
+              <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl p-4 max-w-md">
+                <span
+                  class="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center text-white flex-shrink-0">
+                  <i class="fa-solid fa-ribbon text-xs"></i>
+                </span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Affordable Treatment</h4>
+                  <p class="text-slate-300 text-[13px] leading-snug">Providing high-quality subsidized care and
+                    supporting central government welfare schemes.</p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 pt-4">
+                <a href="#appointment-section"
+                  class="bg-brand-red hover:bg-red-800 text-white px-8 py-3.5 rounded-full font-bold text-xs transition-all shadow-md flex items-center gap-2 hover:scale-105">
+                  Request OPD Token <span class="text-[10px]">&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hospital Image column -->
+            <div class="lg:col-span-5 flex items-center justify-center relative w-full h-full min-h-[300px] lg:min-h-0">
+              <!-- Background decorative details -->
+              <div
+                class="absolute top-[20%] left-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+              <div
+                class="absolute bottom-[20%] right-[-10%] text-white/5 text-8xl font-light pointer-events-none select-none">
+                +</div>
+
+              <!-- Floating image matching slide 1 -->
+              <img src="assets/img/2.jpg.jpeg" alt="Sangrur Hospital Building"
+                class="w-[320px] h-[420px] sm:w-[380px] sm:h-[480px] lg:w-[460px] lg:h-[560px] object-cover object-center z-10 drop-shadow-2xl select-none border-8 border-white/10 rounded-[15px] bg-slate-800/40 backdrop-blur-sm" />
+
+              <!-- Floating GOVT OF INDIA badge -->
+              <div
+                class="absolute right-4 lg:right-0 bottom-[15%] z-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 flex items-center gap-2 shadow-lg scale-90 lg:scale-100">
+                <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                <span class="text-white text-xs font-bold tracking-wide">GOVT OF INDIA</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SLIDE DOTS INDICATORS -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-30" id="sliderDots">
+          <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+            onclick="goHeroSlide(0)" aria-label="Slide 1"></button>
+          <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+            onclick="goHeroSlide(1)" aria-label="Slide 2"></button>
+          <button class="w-3 h-3 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+            onclick="goHeroSlide(2)" aria-label="Slide 3"></button>
+        </div>
+
+      </div>
+
+      <!-- ===================================================
+             BOTTOM QUICK LINKS STRIP
+        ==================================================== -->
+      <div
+        class="w-full bg-[#0D1B4E] px-6 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 z-30 border-t border-white/10">
+
+        <!-- Item 1: Emergency Services -->
+        <a href="tel:+911722290100"
+          class="flex items-center gap-3.5 flex-1 group hover:-translate-y-1 transition-all duration-300 w-full md:border-r border-white/20 pr-4">
+          <span
+            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-red group-hover:shadow-[0_0_15px_rgba(192,18,44,0.5)] transition-all">
+            <span class="material-symbols-outlined text-white text-[22px]">emergency_home</span>
+          </span>
+          <div class="text-left">
+            <h4 class="text-white font-extrabold text-[13px] tracking-wider uppercase mb-0.5">Emergency Services</h4>
+            <p class="text-blue-100/90 font-medium text-[10px] leading-tight uppercase">24x7 Emergency Care</p>
+          </div>
+        </a>
+
+        <!-- Item 2: Reports & Records -->
+        <a href="#"
+          class="flex items-center gap-3.5 flex-1 group hover:-translate-y-1 transition-all duration-300 w-full md:border-r border-white/20 px-2 md:pr-4 md:pl-2">
+          <span
+            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all">
+            <span class="material-symbols-outlined text-white text-[22px]">receipt_long</span>
+          </span>
+          <div class="text-left">
+            <h4 class="text-white font-extrabold text-[13px] tracking-wider uppercase mb-0.5">Reports &amp; Records</h4>
+            <p class="text-blue-100/90 font-medium text-[10px] leading-tight uppercase">Access Medical Reports</p>
+          </div>
+        </a>
+
+        <!-- Item 3: Health Schemes -->
+        <a href="#"
+          class="flex items-center gap-3.5 flex-1 group hover:-translate-y-1 transition-all duration-300 w-full md:border-r border-white/20 px-2 md:pr-4 md:pl-2">
+          <span
+            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all">
+            <span class="material-symbols-outlined text-white text-[22px]">health_and_safety</span>
+          </span>
+          <div class="text-left">
+            <h4 class="text-white font-extrabold text-[13px] tracking-wider uppercase mb-0.5">Health Schemes</h4>
+            <p class="text-blue-100/90 font-medium text-[10px] leading-tight uppercase">Govt &amp; TMC Schemes</p>
+          </div>
+        </a>
+
+        <!-- Item 4: Contact Hospital -->
+        <a href="#contact-section"
+          class="flex items-center gap-3.5 flex-1 group hover:-translate-y-1 transition-all duration-300 w-full px-2 md:pl-2">
+          <span
+            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all">
+            <span class="material-symbols-outlined text-white text-[22px]">location_on</span>
+          </span>
+          <div class="text-left">
+            <h4 class="text-white font-extrabold text-[13px] tracking-wider uppercase mb-0.5">Contact Hospital</h4>
+            <p class="text-blue-100/90 font-medium text-[10px] leading-tight uppercase">Address, Phone, Email</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+         THREE FEATURE CARDS (Directly under Hero)
+    ==================================================== -->
+  <section class="custom-feature-cards-section relative z-20 py-16 bg-gradient-to-b from-[#EBF3FC] to-[#F6FAFE]">
+    <div class="max-w-[1300px] mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Card 1: Patient Services -->
+        <a href="#"
+          class="bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
+          <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
+            <img src="assets/img/doctors_directory.png" alt="Doctors Directory"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+          <div class="p-6 flex flex-col bg-white border-t border-slate-50">
+            <h3 class="text-[18px] leading-tight font-extrabold text-[#112A46] mb-1">Doctors Directory</h3>
+            <p class="text-slate-500 text-[13px] font-medium leading-snug">Search our specialist doctors</p>
+          </div>
+        </a>
+
+        <!-- Card 2: Book Appointment -->
+        <a href="#appointment-section"
+          class="bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
+          <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
+            <img src="assets/img/book_appointment.png" alt="Book Appointment"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+          <div class="p-6 flex flex-col bg-white border-t border-slate-50">
+            <h3 class="text-[18px] leading-tight font-extrabold text-[#112A46] mb-1">Book Appointment</h3>
+            <p class="text-slate-500 text-[13px] font-medium leading-snug">Book your appointment online</p>
+          </div>
+        </a>
+
+        <!-- Card 3: Doctors Directory -->
+        <a href="#"
+          class="bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
+          <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
+            <img src="assets/img/patient_services.png" alt="Patient Services"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+          <div class="p-6 flex flex-col bg-white border-t border-slate-50">
+            <h3 class="text-[18px] leading-tight font-extrabold text-[#112A46] mb-1">Patient Services</h3>
+            <p class="text-slate-500 text-[13px] font-medium leading-snug">OPD, IPD, Medical Records</p>
+          </div>
+        </a>
+
+
+        <!-- Card 4: Our Locations -->
+        <button onclick="document.getElementById('locationsModal').classList.remove('hidden')"
+          class="text-left bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
+          <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
+            <img src="assets/img/hospital_locations.png" alt="Our Locations"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+          <div class="p-6 flex flex-col bg-white border-t border-slate-50">
+            <h3 class="text-[18px] leading-tight font-extrabold text-[#112A46] mb-1">Our Locations</h3>
+            <p class="text-slate-500 text-[13px] font-medium leading-snug">View multiple hospital branches</p>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Locations Modal -->
+    <div id="locationsModal"
+      class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
+      <div
+        class="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden transform transition-transform scale-100">
+        <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+          <h2 class="text-xl font-bold text-[#112A46]"><i class="fa-solid fa-map-location-dot text-brand-red mr-2"></i>
+            Our Hospital Locations</h2>
+          <button onclick="document.getElementById('locationsModal').classList.add('hidden')"
+            class="text-slate-400 hover:text-red-500 transition-colors">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+        <div class="p-6 space-y-4 max-h-[60vh] overflow-y-auto">
+
+          <div
+            class="flex items-start gap-4 p-4 rounded-xl bg-blue-50 border border-blue-100 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white shrink-0 mt-1">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#112A46] text-sm">Homi Bhabha Cancer Hospital, Sangrur</h4>
+              <p class="text-slate-500 text-xs mt-1">Civil Hospital Campus, Sangrur, Punjab 148001</p>
+              <a href="#" class="text-blue-600 hover:underline text-xs font-semibold mt-2 inline-block">Get Directions
+                &rarr;</a>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start gap-4 p-4 rounded-xl bg-blue-50 border border-blue-100 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-full bg-[#0097A7] flex items-center justify-center text-white shrink-0 mt-1">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#112A46] text-sm">Homi Bhabha Cancer Hospital, Mullanpur</h4>
+              <p class="text-slate-500 text-xs mt-1">Medicity, New Chandigarh, Mullanpur, Punjab 140901</p>
+              <a href="#" class="text-[#0097A7] hover:underline text-xs font-semibold mt-2 inline-block">Get Directions
+                &rarr;</a>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start gap-4 p-4 rounded-xl bg-blue-50 border border-blue-100 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center text-white shrink-0 mt-1">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#112A46] text-sm">Tata Memorial Hospital (Parent)</h4>
+              <p class="text-slate-500 text-xs mt-1">Dr. E Borges Road, Parel, Mumbai, Maharashtra 400012</p>
+              <a href="#" class="text-slate-600 hover:underline text-xs font-semibold mt-2 inline-block">Get Directions
+                &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="p-4 border-t border-slate-100 bg-slate-50 text-center">
+          <button onclick="document.getElementById('locationsModal').classList.add('hidden')"
+            class="px-6 py-2 bg-[#112A46] text-white rounded-full font-semibold text-sm hover:bg-blue-900 transition-colors">Close
+            Map</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         ABOUT MEDICAL / HOSPITAL SECTION
+    ==================================================== -->
+  <section class="custom-about-us-section py-20 max-w-[1400px] mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Left: Image frame with border -->
+      <div class="lg:col-span-6 relative flex justify-center">
+        <div
+          class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="assets/img/1.jpg.jpeg" alt="Clinical setup" class="w-full h-full object-cover" />
+          <div
+            class="absolute bottom-6 right-6 bg-primary text-white p-5 rounded-2xl shadow-xl flex items-center gap-3">
+            <span class="material-symbols-outlined text-4xl">health_and_safety</span>
+            <div class="text-left">
+              <span class="block font-black text-xl leading-none">NABH</span>
+              <span class="text-[9px] uppercase tracking-wider font-bold">Accredited Quality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text & Details -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
+          <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
+          About Medical
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-dark-navy leading-tight">
+          Providing State-of-the-Art <br />
+          <span class="text-primary">Clinical Oncology Care</span>
+        </h2>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Homi Bhabha Cancer Hospital &amp; Research Centre is committed to delivering unified protocols in diagnostics,
+          therapies, surgical intervention, and rehabilitation. We serve thousands of cancer patients annually with
+          compassion and evidence-based standards.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="flex gap-2">
+            <span class="material-symbols-outlined text-primary font-bold">verified</span>
+            <div>
+              <h4 class="font-bold text-dark-navy text-sm">Professional Doctors</h4>
+              <p class="text-slate-400 text-[13px]">Expert DMG specialist teams</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <span class="material-symbols-outlined text-primary font-bold">verified</span>
+            <div>
+              <h4 class="font-bold text-dark-navy text-sm">Emergency Support</h4>
+              <p class="text-slate-400 text-[13px]">Stabilization &amp; ICU facilities</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <span class="material-symbols-outlined text-primary font-bold">verified</span>
+            <div>
+              <h4 class="font-bold text-dark-navy text-sm">Super Speciality Wards</h4>
+              <p class="text-slate-400 text-[13px]">Bed strengths up to 400+</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <span class="material-symbols-outlined text-primary font-bold">verified</span>
+            <div>
+              <h4 class="font-bold text-dark-navy text-sm">24/7 Active Service</h4>
+              <p class="text-slate-400 text-[13px]">Always here for cancer patients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <a href="#"
+            class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all active:scale-95 shadow-md shadow-primary/10">
+            Read More
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         GYNECOLOGIST * CARDIOLOGIST * NEUROLOGIST BANNER
+    ==================================================== -->
+  <section
+    class="custom-ticker-marquee-section bg-[#05183D] py-6 overflow-hidden relative z-10 border-y border-white/5">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <div class="w-full overflow-hidden relative flex">
+        <div
+          class="animate-marquee flex gap-12 whitespace-nowrap text-white/50 text-lg md:text-xl font-bold uppercase tracking-widest">
+          <span>Gynecologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Cardiologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Neurologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Oncologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Radiologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Pathologist <span class="text-primary mx-3">&bull;</span></span>
+
+          <span>Gynecologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Cardiologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Neurologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Oncologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Radiologist <span class="text-primary mx-3">&bull;</span></span>
+          <span>Pathologist <span class="text-primary mx-3">&bull;</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         SERVICES SECTION (Provides Best Service)
+    ==================================================== -->
+  <section class="custom-our-services-section py-20 bg-white" id="services-section">
+    <div class="max-w-[1400px] mx-auto px-6 space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
+            <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
+            Provides Best Service
+          </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-dark-navy">
+            Comprehensive Clinical Specialties
+          </h2>
+        </div>
+        <a href="#"
+          class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold text-xs flex items-center gap-1 self-start transition-all">
+          Our Services <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1: Medical Oncology -->
+        <div
+          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="p-8 pb-4 flex justify-between items-start">
+            <div
+              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
+              <span class="material-symbols-outlined text-2xl">science</span>
+            </div>
+            <span class="text-slate-300 font-bold text-lg">01</span>
+          </div>
+          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Medical Oncology
+              </h3>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Advanced chemotherapy, immunotherapy, targeted therapy, and hormonotherapy protocols.
+              </p>
+            </div>
+            <span
+              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 2: Radiation Oncology -->
+        <div
+          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="p-8 pb-4 flex justify-between items-start">
+            <div
+              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
+              <span class="material-symbols-outlined text-2xl">radiology</span>
+            </div>
+            <span class="text-slate-300 font-bold text-lg">02</span>
+          </div>
+          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Radiation Oncology
+              </h3>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Equipped with modern linear accelerators (LINAC) offering 3D-CRT, IMRT, IGRT, and SRS.
+              </p>
+            </div>
+            <span
+              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 3: Surgical Oncology -->
+        <div
+          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="p-8 pb-4 flex justify-between items-start">
+            <div
+              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
+              <span class="material-symbols-outlined text-2xl">emergency_surgery</span>
+            </div>
+            <span class="text-slate-300 font-bold text-lg">03</span>
+          </div>
+          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Surgical Oncology
+              </h3>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Robotic, laparoscopic, and micro-vascular reconstructive complex cancer surgeries.
+              </p>
+            </div>
+            <span
+              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 4: Pathology & Imaging -->
+        <div
+          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="p-8 pb-4 flex justify-between items-start">
+            <div
+              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
+              <span class="material-symbols-outlined text-2xl">biotech</span>
+            </div>
+            <span class="text-slate-300 font-bold text-lg">04</span>
+          </div>
+          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
+            <div class="space-y-2">
+              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Diagnostics &amp;
+                Lab</h3>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Histopathology, IHC, cytopathology, biochemistry, molecular testing, and PET-CT scan systems.
+              </p>
+            </div>
+            <span
+              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         MAKE APPOINTMENT SECTION
+    ==================================================== -->
+  <section class="custom-appointment-section py-20 max-w-[1400px] mx-auto px-6" id="appointment-section">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-[#e8f4fd]/50 p-8 md:p-12 rounded-[2.5rem] border border-blue-100 shadow-sm">
+
+      <!-- Left: Caring visual -->
+      <div class="lg:col-span-5 relative">
+        <div class="w-full aspect-square rounded-2xl overflow-hidden border-4 border-white shadow-xl relative">
+          <img src="assets/img/2.jpg.jpeg" alt="Comforting patient" class="w-full h-full object-cover" />
+          <div
+            class="absolute -top-4 -right-4 bg-brand-red text-white p-3 rounded-full flex items-center justify-center shadow-md animate-bounce">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dynamic Booking Form -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
+            <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
+            Make Appointment
+          </div>
+          <h2 class="text-3xl font-extrabold text-dark-navy leading-tight">
+            Request Your Consultation Slot
+          </h2>
+        </div>
+
+        <form action="#" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Your Name</label>
+            <input type="text" placeholder="Full Name"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Your Email</label>
+            <input type="email" placeholder="Email Address"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Phone Number</label>
+            <input type="tel" placeholder="Mobile Number"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Preferred Date</label>
+            <input type="date"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Select Specialty</label>
+            <select
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+              <option>Medical Oncology</option>
+              <option>Radiation Therapy</option>
+              <option>Surgical Oncology</option>
+              <option>Nuclear Medicine / Diagnostics</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 pt-2">
+            <button type="submit"
+              class="w-full bg-primary hover:bg-primary-dark text-white py-3.5 rounded-xl font-bold text-sm transition-all active:scale-95 shadow-md">
+              Book Appointment Now
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+         MEET OUR BEST DOCTORS SECTION
+    ==================================================== -->
+  <section class="custom-doctors-section py-20 bg-white">
+    <div class="max-w-[1400px] mx-auto px-6 space-y-12">
+      <div class="text-center max-w-xl mx-auto space-y-3">
+        <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
+          <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
+          Meet Our Best Doctors
+        </div>
+        <h2 class="text-3xl font-extrabold text-dark-navy">Our Specialized Oncologists</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Doctor 1 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="relative aspect-[4/5] bg-slate-100 overflow-hidden">
+            <img src="assets/img/2.jpg.jpeg" alt="Dr. Olivia Smith"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div
+              class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex gap-3 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+          </div>
+          <div class="p-6 text-center">
+            <h4 class="font-bold text-dark-navy text-base">Dr. Olivia Smith, MD</h4>
+            <p class="text-primary text-xs font-medium mt-1">Medical Oncologist</p>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="relative aspect-[4/5] bg-slate-100 overflow-hidden">
+            <img src="assets/img/1.jpg.jpeg" alt="Dr. John Davis"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div
+              class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex gap-3 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+          </div>
+          <div class="p-6 text-center">
+            <h4 class="font-bold text-dark-navy text-base">Dr. John Davis, MS</h4>
+            <p class="text-primary text-xs font-medium mt-1">Surgical Oncologist</p>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="relative aspect-[4/5] bg-slate-100 overflow-hidden">
+            <img src="assets/img/2.jpg.jpeg" alt="Dr. Sarah Johnson"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div
+              class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex gap-3 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+          </div>
+          <div class="p-6 text-center">
+            <h4 class="font-bold text-dark-navy text-base">Dr. Sarah Johnson, DM</h4>
+            <p class="text-primary text-xs font-medium mt-1">Radiation Oncologist</p>
+          </div>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+          <div class="relative aspect-[4/5] bg-slate-100 overflow-hidden">
+            <img src="assets/img/1.jpg.jpeg" alt="Dr. Robert Miller"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div
+              class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex gap-3 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+              <a href="#" class="text-slate-600 hover:text-primary"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            </div>
+          </div>
+          <div class="p-6 text-center">
+            <h4 class="font-bold text-dark-navy text-base">Dr. Robert Miller, PhD</h4>
+            <p class="text-primary text-xs font-medium mt-1">Research Lead / Pathology</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         TESTIMONIAL SECTION
+    ==================================================== -->
+  <section class="custom-statistics-counter-section py-20 bg-gradient-to-r from-[#031533] to-[#0A1C30] text-white">
+    <div class="max-w-[1400px] mx-auto px-6 space-y-12">
+      <div class="text-center max-w-xl mx-auto space-y-3">
+        <div class="inline-flex items-center gap-1.5 text-secondary text-xs font-bold uppercase tracking-wider">
+          <span class="w-2.5 h-2.5 bg-secondary rounded-full"></span>
+          Testimonial
+        </div>
+        <h2 class="text-3xl font-extrabold">Patient &amp; Survivor Stories</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 relative flex justify-center">
+          <div
+            class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl">
+            <img src="assets/img/1.jpg.jpeg" alt="Survivor family" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-primary/20"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-6">
+          <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 relative">
+            <span
+              class="material-symbols-outlined text-[60px] text-primary/20 absolute top-4 right-4 font-light">format_quote</span>
+            <div class="flex gap-1 text-[#f59e0b] mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+              "The doctors and staff at Homi Bhabha Cancer Hospital offered not just medical excellence, but immense
+              strength and compassion during my treatment. The state-of-the-art radiation therapy coupled with
+              subsidised medications made my recovery possible without financial ruin."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center font-bold text-white text-sm">
+                RS
+              </div>
+              <div>
+                <h5 class="font-bold text-white text-sm">Rajinder Singh</h5>
+                <p class="text-secondary text-[13px] font-medium">Cancer Survivor (2025)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         PARTNERS / AFFILIATIONS LOGO BAR
+    ==================================================== -->
+  <section class="custom-partners-section py-12 bg-white border-b border-slate-100">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <div class="flex flex-wrap items-center justify-around gap-6 opacity-60">
+        <span class="font-black text-slate-400 text-lg sm:text-2xl uppercase tracking-widest flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#C0122C]">account_balance</span> DAE
+        </span>
+        <span class="font-black text-slate-400 text-lg sm:text-2xl uppercase tracking-widest flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#C0122C]">health_and_safety</span> TMC
+        </span>
+        <span class="font-black text-slate-400 text-lg sm:text-2xl uppercase tracking-widest flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#C0122C]">hub</span> NCG
+        </span>
+        <span class="font-black text-slate-400 text-lg sm:text-2xl uppercase tracking-widest flex items-center gap-2">
+          <span class="material-symbols-outlined text-[#C0122C]">verified</span> NABH
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         READ OUR LATEST BLOG (What's New / Announcements)
+    ==================================================== -->
+  <section class="custom-blog-section py-20" id="blog-section">
+    <div class="max-w-[1400px] mx-auto px-6 space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
+            <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
+            Updates &amp; Notices
+          </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-dark-navy">
+            Latest from HBCH &amp; RC
+          </h2>
+        </div>
+        <a href="#"
+          class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold text-xs flex items-center gap-1 self-start transition-all">
+          View All Updates <span class="material-symbols-outlined text-sm">trending_flat</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Blog / News Item 1 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-xl transition-all duration-300">
+          <div class="relative aspect-video bg-slate-100">
+            <img src="assets/img/1.jpg.jpeg" alt="PET-CT Scan" class="w-full h-full object-cover" />
+            <span
+              class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-md text-[10px] font-bold uppercase">Facility</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <span class="text-slate-400 text-xs font-semibold">June 24, 2026</span>
+              <h4 class="font-bold text-dark-navy text-base leading-snug">New Upgraded PET-CT Scanning Wing Commissioned
+              </h4>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Advanced molecular diagnostics now accessible inside the hospital, decreasing waiting lists
+                significantly.
+              </p>
+            </div>
+            <a href="#" class="text-primary font-bold text-xs flex items-center gap-1 group self-start">
+              Read More <span
+                class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog / News Item 2 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-xl transition-all duration-300">
+          <div class="relative aspect-video bg-slate-100">
+            <img src="assets/img/2.jpg.jpeg" alt="OPD revision" class="w-full h-full object-cover" />
+            <span
+              class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-md text-[10px] font-bold uppercase">Announcements</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <span class="text-slate-400 text-xs font-semibold">June 20, 2026</span>
+              <h4 class="font-bold text-dark-navy text-base leading-snug">Revision in General OPD timings from July 1,
+                2026</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                General OPD slot times expanded in mornings to ease patients registration and DMG consultations.
+              </p>
+            </div>
+            <a href="#" class="text-primary font-bold text-xs flex items-center gap-1 group self-start">
+              Read More <span
+                class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog / News Item 3 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-xl transition-all duration-300">
+          <div class="relative aspect-video bg-slate-100">
+            <img src="assets/img/1.jpg.jpeg" alt="Awards wing" class="w-full h-full object-cover" />
+            <span
+              class="absolute top-4 left-4 bg-brand-red text-white px-3 py-1 rounded-md text-[10px] font-bold uppercase">Recognitions</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <span class="text-slate-400 text-xs font-semibold">May 15, 2026</span>
+              <h4 class="font-bold text-dark-navy text-base leading-snug">National Healthcare Excellence Award 2026</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">
+                Recognized as the "Best Specialised Oncology Institution" for clinical services and supportive oncology.
+              </p>
+            </div>
+            <a href="#" class="text-primary font-bold text-xs flex items-center gap-1 group self-start">
+              Read More <span
+                class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+         CALL-TO-ACTION STRIP
+    ==================================================== -->
+  <section class="custom-newsletter-cta-section bg-primary py-8 text-white relative z-10">
+    <div class="max-w-[1400px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <h3 class="text-xl font-bold flex items-center gap-2">
+        <span class="material-symbols-outlined text-2xl">call</span>
+        Looking for specialised oncology consultation? Book your slot!
+      </h3>
+      <a href="#appointment-section"
+        class="bg-white text-primary hover:bg-[#F4F8FC] px-8 py-3.5 rounded-full font-bold text-sm shadow-md transition-all active:scale-95">
+        Book Now
+      </a>
+    </div>
+  </section>
+</main>

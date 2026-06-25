@@ -1,0 +1,71 @@
+.glass-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+#siteHeader {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#siteHeader.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(10, 28, 48, 0.08);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  animation: slideDownHeader 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+#siteHeader.is-sticky .sh-utility-row {
+  display: none !important;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+}
+
+#siteHeader.is-sticky .brand-logo {
+  height: 3rem !important;
+  width: 3rem !important;
+}
+
+#siteHeader.is-sticky .brand-text {
+  transform: scale(0.85);
+  transform-origin: left center;
+}
+
+#siteHeader.is-sticky .main-nav-row {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+@keyframes slideDownHeader {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+/* Mega Dropdown hover triggers */
+.nav-item-dropdown:hover .mega-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Scrolling ticker animation */
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 20s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
