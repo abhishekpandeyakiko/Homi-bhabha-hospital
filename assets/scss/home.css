@@ -48,3 +48,22 @@
 .custom-partners-section { }
 .custom-blog-section { }
 .custom-newsletter-cta-section { }
+
+
+/* ======================================= */
+/* ABOUT US CIRCULAR TEXT                  */
+/* ======================================= */
+
+.circular-text-container svg {
+  transform-origin: center;
+  /* animation applied in tailwind classes directly */
+}
+.circular-text-container path {
+  fill: transparent;
+}
+.circular-text-container text {
+  font-family: inherit;
+  fill: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}

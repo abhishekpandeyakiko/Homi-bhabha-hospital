@@ -312,7 +312,7 @@
         <a href="#appointment-section"
           class="bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
           <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
-            <img src="assets/img/book_appointment.png" alt="Book Appointment"
+            <img src="assets/img/video_consult.png" alt="Book Appointment"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
           </div>
@@ -322,11 +322,11 @@
           </div>
         </a>
 
-        <!-- Card 3: Doctors Directory -->
+        <!-- Card 3: Patient Services -->
         <a href="#"
           class="bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
           <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
-            <img src="assets/img/patient_services.png" alt="Patient Services"
+            <img src="assets/img/lab_tests.png" alt="Patient Services"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
           </div>
@@ -336,12 +336,11 @@
           </div>
         </a>
 
-
         <!-- Card 4: Our Locations -->
         <button onclick="document.getElementById('locationsModal').classList.remove('hidden')"
           class="text-left bg-white rounded-[1rem] shadow-md hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col group overflow-hidden">
           <div class="w-full aspect-square bg-slate-100 overflow-hidden relative">
-            <img src="assets/img/hospital_locations.png" alt="Our Locations"
+            <img src="assets/img/find_doctors.png" alt="Our Locations"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
           </div>
@@ -421,77 +420,105 @@
   <!-- ===================================================
          ABOUT MEDICAL / HOSPITAL SECTION
     ==================================================== -->
-  <section class="custom-about-us-section py-20 max-w-[1400px] mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <!-- Left: Image frame with border -->
-      <div class="lg:col-span-6 relative flex justify-center">
-        <div
-          class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-          <img src="assets/img/1.jpg.jpeg" alt="Clinical setup" class="w-full h-full object-cover" />
-          <div
-            class="absolute bottom-6 right-6 bg-primary text-white p-5 rounded-2xl shadow-xl flex items-center gap-3">
-            <span class="material-symbols-outlined text-4xl">health_and_safety</span>
-            <div class="text-left">
-              <span class="block font-black text-xl leading-none">NABH</span>
-              <span class="text-[9px] uppercase tracking-wider font-bold">Accredited Quality</span>
-            </div>
-          </div>
-        </div>
+  <section
+    class="container-fluid custom-about-us-section py-[30px] relative overflow-hidden bg-gradient-to-br from-[#EEF4FA] to-[#F2F8FC]">
+
+    <div class="max-w-[1200px] mx-auto">
+
+      <!-- Top Header -->
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-8">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#112A46]">
+          About Us
+        </h2>
       </div>
 
-      <!-- Right: Text & Details -->
-      <div class="lg:col-span-6 space-y-6">
-        <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
-          <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
-          About Medical
-        </div>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-dark-navy leading-tight">
-          Providing State-of-the-Art <br />
-          <span class="text-primary">Clinical Oncology Care</span>
-        </h2>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          Homi Bhabha Cancer Hospital &amp; Research Centre is committed to delivering unified protocols in diagnostics,
-          therapies, surgical intervention, and rehabilitation. We serve thousands of cancer patients annually with
-          compassion and evidence-based standards.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          <div class="flex gap-2">
-            <span class="material-symbols-outlined text-primary font-bold">verified</span>
-            <div>
-              <h4 class="font-bold text-dark-navy text-sm">Professional Doctors</h4>
-              <p class="text-slate-400 text-[13px]">Expert DMG specialist teams</p>
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
+        <!-- Left Image Area -->
+        <div class="w-full flex justify-center lg:justify-start">
+          <div class="relative max-w-[450px] w-full mt-8 lg:mt-0">
+            <!-- The main simple image -->
+            <div class="rounded-3xl overflow-hidden shadow-xl w-full">
+              <img src="assets/img/about_doctor.png" alt="Expert Doctor"
+                class="w-full object-cover aspect-[4/5] object-center" />
             </div>
-          </div>
-          <div class="flex gap-2">
-            <span class="material-symbols-outlined text-primary font-bold">verified</span>
-            <div>
-              <h4 class="font-bold text-dark-navy text-sm">Emergency Support</h4>
-              <p class="text-slate-400 text-[13px]">Stabilization &amp; ICU facilities</p>
-            </div>
-          </div>
-          <div class="flex gap-2">
-            <span class="material-symbols-outlined text-primary font-bold">verified</span>
-            <div>
-              <h4 class="font-bold text-dark-navy text-sm">Super Speciality Wards</h4>
-              <p class="text-slate-400 text-[13px]">Bed strengths up to 400+</p>
-            </div>
-          </div>
-          <div class="flex gap-2">
-            <span class="material-symbols-outlined text-primary font-bold">verified</span>
-            <div>
-              <h4 class="font-bold text-dark-navy text-sm">24/7 Active Service</h4>
-              <p class="text-slate-400 text-[13px]">Always here for cancer patients</p>
+            
+            <!-- Floating Blue Badge -->
+            <div
+              class="absolute -top-6 -right-6 sm:-top-8 sm:-right-8 w-32 h-32 sm:w-36 sm:h-36 bg-[#007aff] rounded-[2rem] shadow-2xl flex items-center justify-center border-4 border-white z-10">
+              <!-- Center Icon -->
+              <div class="absolute inset-0 flex items-center justify-center z-20">
+                <div class="w-[3.2rem] h-[3.2rem] bg-white rounded-full flex items-center justify-center shadow-inner">
+                  <i class="fa-solid fa-heart-pulse text-red-600 text-[26px]"></i>
+                </div>
+              </div>
+              <!-- Circular Text Animation -->
+              <div class="w-[125%] h-[125%] animate-[spin_12s_linear_infinite] relative circular-text-container z-10">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                  <path id="circlePath" d="M 50, 50 m -31, 0 a 31,31 0 1,1 62,0 a 31,31 0 1,1 -62,0"
+                    fill="transparent" />
+                  <text font-size="10" font-weight="bold" fill="white" letter-spacing="3.5">
+                    <textPath href="#circlePath" startOffset="0%">
+                      GYNECOLOGIST • HEALTHCARE • NEUROLOGIST •
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="pt-4">
-          <a href="#"
-            class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all active:scale-95 shadow-md shadow-primary/10">
-            Read More
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </a>
+        <!-- Right Text Area -->
+        <div class="space-y-6">
+
+          <h3 class="text-2xl lg:text-3xl font-extrabold text-[#112A46] leading-[1.3]">
+            A Premier Network of Government-Run Cancer Hospitals Across India
+          </h3>
+          <p class="text-slate-600 font-medium text-sm leading-relaxed mt-4">
+            Our extensive medical group operates world-class facilities including <strong>TMC Mumbai, ACTREC & CCE Navi
+              Mumbai, HBCHRC Vizag, BBCI Guwahati, MPMMCC & HBCH Varanasi, and HBCHRC Muzaffarpur</strong> to provide
+            the highest standard of care.
+          </p>
+
+          <!-- Check List -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-4">
+            <div class="flex items-center gap-3 border-b border-dashed border-slate-300 pb-3">
+              <i class="fa-solid fa-circle-check text-[#007aff]"></i>
+              <span class="text-sm font-semibold text-slate-600">Completely to syndicate</span>
+            </div>
+            <div class="flex items-center gap-3 border-b border-dashed border-slate-300 pb-3">
+              <i class="fa-solid fa-circle-check text-[#007aff]"></i>
+              <span class="text-sm font-semibold text-slate-600">24 Hrs Ambulance Service</span>
+            </div>
+            <div class="flex items-center gap-3 border-b border-dashed border-slate-300 pb-3">
+              <i class="fa-solid fa-circle-check text-[#007aff]"></i>
+              <span class="text-sm font-semibold text-slate-600">Medical Surgical Services</span>
+            </div>
+            <div class="flex items-center gap-3 border-b border-dashed border-slate-300 pb-3">
+              <i class="fa-solid fa-circle-check text-[#007aff]"></i>
+              <span class="text-sm font-semibold text-slate-600">Lab & Pathology Services</span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#"
+              class="bg-[#007aff] hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-bold text-sm shadow-md transition-all active:scale-95 inline-block">
+              Know More About Us
+            </a>
+            <div class="flex items-center gap-3 px-4 py-2 bg-white rounded-full shadow-sm border border-slate-100">
+              <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-500">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[10px] uppercase font-bold text-slate-400">Emergency Call</span>
+                <a href="tel:+912224177000" class="text-sm font-extrabold text-[#112A46] hover:text-[#007aff]">
+                  +91 22 24177000
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -524,135 +551,182 @@
     </div>
   </section>
 
-  <!-- ===================================================
-         SERVICES SECTION (Provides Best Service)
+    <!-- ===================================================
+         SERVICES SECTION (Provides Best Service Carousel)
     ==================================================== -->
-  <section class="custom-our-services-section py-20 bg-white" id="services-section">
-    <div class="max-w-[1400px] mx-auto px-6 space-y-12">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-        <div class="space-y-4">
-          <div class="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-wider">
-            <span class="w-2.5 h-2.5 bg-primary rounded-full"></span>
-            Provides Best Service
+  <section class="container-fluid custom-our-services-section py-20 bg-[#F4F8FC]" id="services-section">
+    <div class="max-w-[1400px] mx-auto px-6">
+      
+      <!-- Header -->
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-16">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-1.5 text-[#007aff] text-xs font-bold uppercase tracking-wider">
+            <span class="w-2.5 h-2.5 bg-[#007aff] rounded-full"></span>
+            Our Services
           </div>
-          <h2 class="text-3xl md:text-4xl font-extrabold text-dark-navy">
-            Comprehensive Clinical Specialties
-          </h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight text-[#112A46] tracking-tight">Specialities & Procedures</h2>
         </div>
-        <a href="#"
-          class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold text-xs flex items-center gap-1 self-start transition-all">
-          Our Services <span class="material-symbols-outlined text-sm">arrow_forward</span>
-        </a>
+        <div>
+          <button class="bg-[#007aff] hover:bg-blue-500 text-white px-8 py-3.5 rounded-full font-bold text-sm flex items-center gap-2 transition-colors">
+            View All Services <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Carousel Container -->
+      <div class="relative group">
+        
+        <!-- Navigation Arrows -->
+        <button id="prevBtn" onclick="scrollCarousel(-1)" class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-white hover:bg-[#007aff] hover:border-[#007aff] transition-colors z-10 bg-white shadow-xl">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="scrollCarousel(1)" class="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-white hover:bg-[#007aff] hover:border-[#007aff] transition-colors z-10 bg-white shadow-xl">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
 
-        <!-- Card 1: Medical Oncology -->
-        <div
-          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
-          <div class="p-8 pb-4 flex justify-between items-start">
-            <div
-              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
-              <span class="material-symbols-outlined text-2xl">science</span>
+        <div id="services-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar pb-8 pt-4">
+          
+          <!-- Card 1 -->
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/lab_tests.png" alt="Pediatric Dentistry" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">VACCINE</p>
+              <h3 class="text-white text-xl font-extrabold">Pediatric Dentistry</h3>
             </div>
-            <span class="text-slate-300 font-bold text-lg">01</span>
           </div>
-          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
-            <div class="space-y-2">
-              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Medical Oncology
-              </h3>
-              <p class="text-slate-500 text-xs leading-relaxed">
-                Advanced chemotherapy, immunotherapy, targeted therapy, and hormonotherapy protocols.
-              </p>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/video_consult.png" alt="Digital X-Ray" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">X-RAY</p>
+              <h3 class="text-white text-xl font-extrabold">Digital X-Ray</h3>
             </div>
-            <span
-              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </span>
           </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/doctors_simple.png" alt="Dental Fixing" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">DENTAL</p>
+              <h3 class="text-white text-xl font-extrabold">Dental Fixing</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/surgeries.png" alt="Human Brain Surgery" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">SURGERY</p>
+              <h3 class="text-white text-xl font-extrabold">Human Brain Surgery</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/patient_services.png" alt="Medical Oncology" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">ONCOLOGY</p>
+              <h3 class="text-white text-xl font-extrabold">Medical Oncology</h3>
+            </div>
+          </div>
+
+          <!-- Unique Cards (Second set) -->
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/lab_tests.png" alt="Radiation Therapy" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">RADIATION</p>
+              <h3 class="text-white text-xl font-extrabold">Radiation Therapy</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/video_consult.png" alt="Chemotherapy" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">ONCOLOGY</p>
+              <h3 class="text-white text-xl font-extrabold">Chemotherapy</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/doctors_simple.png" alt="Immunotherapy" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">THERAPY</p>
+              <h3 class="text-white text-xl font-extrabold">Immunotherapy</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/surgeries.png" alt="Bone Marrow Transplant" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">TRANSPLANT</p>
+              <h3 class="text-white text-xl font-extrabold">Bone Marrow Transplant</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/patient_services.png" alt="Pathology Labs" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">PATHOLOGY</p>
+              <h3 class="text-white text-xl font-extrabold">Pathology Labs</h3>
+            </div>
+          </div>
+
+          <!-- Third set -->
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/lab_tests.png" alt="Pediatric Dentistry" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">VACCINE</p>
+              <h3 class="text-white text-xl font-extrabold">Pediatric Dentistry</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/video_consult.png" alt="Digital X-Ray" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">X-RAY</p>
+              <h3 class="text-white text-xl font-extrabold">Digital X-Ray</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/doctors_simple.png" alt="Dental Fixing" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">DENTAL</p>
+              <h3 class="text-white text-xl font-extrabold">Dental Fixing</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/surgeries.png" alt="Human Brain Surgery" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">SURGERY</p>
+              <h3 class="text-white text-xl font-extrabold">Human Brain Surgery</h3>
+            </div>
+          </div>
+          <div class="snap-start shrink-0 w-[280px] md:w-[320px] aspect-[3/4] relative rounded-3xl overflow-hidden group/card cursor-pointer shadow-lg">
+            <img src="assets/img/patient_services.png" alt="Medical Oncology" class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020B21] via-[#05183D]/50 to-transparent opacity-95"></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+              <p class="text-slate-300 text-[10px] font-bold uppercase tracking-widest mb-1.5">ONCOLOGY</p>
+              <h3 class="text-white text-xl font-extrabold">Medical Oncology</h3>
+            </div>
+          </div>
+
         </div>
-
-        <!-- Card 2: Radiation Oncology -->
-        <div
-          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
-          <div class="p-8 pb-4 flex justify-between items-start">
-            <div
-              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
-              <span class="material-symbols-outlined text-2xl">radiology</span>
-            </div>
-            <span class="text-slate-300 font-bold text-lg">02</span>
-          </div>
-          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
-            <div class="space-y-2">
-              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Radiation Oncology
-              </h3>
-              <p class="text-slate-500 text-xs leading-relaxed">
-                Equipped with modern linear accelerators (LINAC) offering 3D-CRT, IMRT, IGRT, and SRS.
-              </p>
-            </div>
-            <span
-              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </span>
-          </div>
-        </div>
-
-        <!-- Card 3: Surgical Oncology -->
-        <div
-          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
-          <div class="p-8 pb-4 flex justify-between items-start">
-            <div
-              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
-              <span class="material-symbols-outlined text-2xl">emergency_surgery</span>
-            </div>
-            <span class="text-slate-300 font-bold text-lg">03</span>
-          </div>
-          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
-            <div class="space-y-2">
-              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Surgical Oncology
-              </h3>
-              <p class="text-slate-500 text-xs leading-relaxed">
-                Robotic, laparoscopic, and micro-vascular reconstructive complex cancer surgeries.
-              </p>
-            </div>
-            <span
-              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </span>
-          </div>
-        </div>
-
-        <!-- Card 4: Pathology & Imaging -->
-        <div
-          class="group bg-[#F4F8FC] rounded-2xl overflow-hidden border border-slate-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
-          <div class="p-8 pb-4 flex justify-between items-start">
-            <div
-              class="w-12 h-12 bg-white text-primary group-hover:bg-primary group-hover:text-white rounded-xl flex items-center justify-center shadow-sm transition-colors duration-300">
-              <span class="material-symbols-outlined text-2xl">biotech</span>
-            </div>
-            <span class="text-slate-300 font-bold text-lg">04</span>
-          </div>
-          <div class="p-8 pt-0 flex-1 flex flex-col justify-between">
-            <div class="space-y-2">
-              <h3 class="font-bold text-dark-navy text-lg group-hover:text-primary transition-colors">Diagnostics &amp;
-                Lab</h3>
-              <p class="text-slate-500 text-xs leading-relaxed">
-                Histopathology, IHC, cytopathology, biochemistry, molecular testing, and PET-CT scan systems.
-              </p>
-            </div>
-            <span
-              class="w-8 h-8 bg-white border border-slate-100 rounded-full flex items-center justify-center text-primary mt-6 group-hover:bg-primary group-hover:text-white transition-all">
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </span>
-          </div>
-        </div>
-
       </div>
+      
     </div>
-  </section>
-
-  <!-- ===================================================
-         MAKE APPOINTMENT SECTION
+    
+    <style>
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </section>\n\n  <!-- ===================================================\n         MAKE APPOINTMENT SECTION
     ==================================================== -->
   <section class="custom-appointment-section py-20 max-w-[1400px] mx-auto px-6" id="appointment-section">
     <div
