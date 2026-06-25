@@ -153,6 +153,45 @@ function initMain() {
       servicesCarousel.addEventListener('touchstart', stopAutoSlide, {passive: true});
       servicesCarousel.addEventListener('touchend', startAutoSlide, {passive: true});
     }
+
+    // --- Stat Counter Animation ---
+    const counters = document.querySelectorAll('.stat-counter');
+    if (counters.length > 0) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            
+            let current = 0;
+            const updateCounter = () => {
+              current += increment;
+              if (current < target) {
+                counter.innerText = Math.ceil(current);
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            
+            updateCounter();
+            observer.unobserve(counter); // Only animate once
+          }
+        });
+      }, observerOptions);
+      
+      counters.forEach(counter => {
+        counterObserver.observe(counter);
+      });
+    }
 }
 
 // Ensure it runs dynamically
