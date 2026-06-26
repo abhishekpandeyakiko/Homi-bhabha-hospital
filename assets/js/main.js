@@ -99,10 +99,14 @@ function initMain() {
     });
 
     // --- Services Carousel Logic (Infinite One-Way Slide) ---
+    let isCarouselTransitioning = false;
     window.scrollCarousel = function(direction) {
+      if (isCarouselTransitioning) return;
+      
       const carousel = document.getElementById('services-carousel');
       if (!carousel || !carousel.firstElementChild) return;
       
+      isCarouselTransitioning = true;
       // Calculate the width of one card plus the gap (gap-6 is 24px)
       const cardWidth = carousel.firstElementChild.offsetWidth + 24;
 
@@ -115,6 +119,7 @@ function initMain() {
           carousel.appendChild(carousel.firstElementChild);
           // Adjust scroll position instantly to prevent visual jumping
           carousel.scrollBy({ left: -cardWidth, behavior: 'instant' });
+          isCarouselTransitioning = false;
         }, 500);
       } else {
         // Prev: move the last element to the start instantly
@@ -124,6 +129,9 @@ function initMain() {
         // Then smoothly scroll back to reveal it
         setTimeout(() => {
           carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+          setTimeout(() => {
+            isCarouselTransitioning = false;
+          }, 500);
         }, 20);
       }
     };
@@ -191,6 +199,72 @@ function initMain() {
       counters.forEach(counter => {
         counterObserver.observe(counter);
       });
+    }
+
+    // --- What's New Updates Ticker & Tab Filtering ---
+    const tickerContainer = document.getElementById('updates-ticker-container');
+    if (tickerContainer) {
+      let scrollInterval;
+      const speed = 1; // pixels per step
+      const delay = 35; // ms per step
+      
+      function startScroll() {
+        if (scrollInterval) clearInterval(scrollInterval);
+        if (tickerContainer.scrollHeight <= tickerContainer.clientHeight) {
+          tickerContainer.scrollTop = 0;
+          return;
+        }
+        scrollInterval = setInterval(() => {
+          if (tickerContainer.scrollTop + tickerContainer.clientHeight >= tickerContainer.scrollHeight - 1) {
+            tickerContainer.scrollTop = 0;
+          } else {
+            tickerContainer.scrollTop += speed;
+          }
+        }, delay);
+      }
+      
+      function stopScroll() {
+        if (scrollInterval) clearInterval(scrollInterval);
+      }
+      
+      tickerContainer.addEventListener('mouseenter', stopScroll);
+      tickerContainer.addEventListener('mouseleave', startScroll);
+      
+      // Tab switching logic
+      const tabs = document.querySelectorAll('.update-tab-btn');
+      const items = document.querySelectorAll('.update-item');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          tabs.forEach(t => {
+            t.classList.remove('bg-white', 'border', 'border-slate-300', 'text-dark-navy', 'shadow-sm', 'font-bold');
+            t.classList.add('text-slate-600', 'hover:text-dark-navy', 'font-semibold');
+          });
+          
+          // Add active class to clicked tab
+          tab.classList.add('bg-white', 'border', 'border-slate-300', 'text-dark-navy', 'shadow-sm', 'font-bold');
+          tab.classList.remove('text-slate-600', 'hover:text-dark-navy', 'font-semibold');
+          
+          const category = tab.getAttribute('data-tab');
+          
+          // Filter items
+          items.forEach(item => {
+            if (category === 'all' || item.getAttribute('data-category') === category) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+          
+          // Reset scroll position and restart scrolling
+          tickerContainer.scrollTop = 0;
+          startScroll();
+        });
+      });
+      
+      // Start initial scroll
+      setTimeout(startScroll, 500);
     }
 }
 
