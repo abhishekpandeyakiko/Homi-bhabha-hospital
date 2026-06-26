@@ -121,3 +121,23 @@
 .recent-events-scroll::-webkit-scrollbar-thumb:hover {
   background: #0A1C30;
 }
+
+/* Government Logos Marquee */
+@keyframes govLogoScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gov-logos-track {
+  animation: govLogoScroll 22s linear infinite;
+  width: max-content;
+}
+
+.gov-logos-track-wrapper:hover .gov-logos-track {
+  animation-play-state: paused;
+}
+
+.gov-logo-item img {
+  max-height: 48px;
+  width: auto;
+}
