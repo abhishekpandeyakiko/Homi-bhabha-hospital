@@ -1,4 +1,4 @@
-/* Hero Slider Card Styles */
+﻿/* Hero Slider Card Styles */
 .hero-grid-bg {
   background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
@@ -33,7 +33,7 @@
 .s-dot-active {
   background-color: #ffffff !important;
   width: 24px !important;
-  border-radius: 9999px !important;
+  border-radius: 6px !important;
   opacity: 1 !important;
 }
 
@@ -138,6 +138,6 @@
 }
 
 .gov-logo-item img {
-  max-height: 48px;
+  max-height: 64px;
   width: auto;
 }

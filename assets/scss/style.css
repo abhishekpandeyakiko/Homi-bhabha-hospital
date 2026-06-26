@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    HBCH & RC  -  Brand Color Theme (from Hospital Logo)
    ============================================================ */
 
@@ -76,7 +76,7 @@ img { max-width: 100%; display: block; }
   background: var(--secondary);
   color: var(--white);
   padding: 8px 20px;
-  border-radius: 30px;
+  border-radius: 6px;
   font-size: .78rem;
   font-weight: 700;
   white-space: nowrap;
@@ -200,7 +200,7 @@ img { max-width: 100%; display: block; }
   color: var(--primary);
   border: 2px solid var(--primary);
   padding: 9px 20px;
-  border-radius: 30px;
+  border-radius: 6px;
   font-size: .82rem; font-weight: 700;
   margin-left: 10px;
   white-space: nowrap;
@@ -315,7 +315,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   letter-spacing: .8px;
   padding: 6px 16px;
-  border-radius: 30px;
+  border-radius: 6px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -362,7 +362,7 @@ img { max-width: 100%; display: block; }
   background: rgba(255,255,255,.1);
   color: rgba(255,255,255,.85);
   padding: 7px 14px;
-  border-radius: 30px;
+  border-radius: 6px;
   font-size: .76rem;
   font-weight: 500;
   border: 1px solid rgba(255,255,255,.15);
@@ -422,7 +422,7 @@ img { max-width: 100%; display: block; }
   width: 42px; height: 42px;
   background: color-mix(in srgb, var(--qc) 12%, white);
   color: var(--qc);
-  border-radius: 10px;
+  border-radius: 6px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1rem;
   flex-shrink: 0;
@@ -467,7 +467,7 @@ img { max-width: 100%; display: block; }
 .about-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
 .ab-f { display: flex; align-items: center; gap: 12px; }
 .ab-fi {
-  width: 40px; height: 40px; border-radius: 10px;
+  width: 40px; height: 40px; border-radius: 6px;
   background: color-mix(in srgb, var(--ac) 12%, white);
   color: var(--ac);
   display: flex; align-items: center; justify-content: center;
@@ -565,7 +565,7 @@ img { max-width: 100%; display: block; }
 .svc-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
 .svc-ib {
   width: 58px; height: 58px;
-  border-radius: 14px;
+  border-radius: 6px;
   background: color-mix(in srgb, var(--sc) 12%, white);
   color: var(--sc);
   display: flex; align-items: center; justify-content: center;
@@ -626,7 +626,7 @@ img { max-width: 100%; display: block; }
 .portal-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
 .pc-ic {
   width: 54px; height: 54px;
-  border-radius: 14px;
+  border-radius: 6px;
   background: color-mix(in srgb, var(--pc) 12%, white);
   color: var(--pc);
   display: flex; align-items: center; justify-content: center;
@@ -699,7 +699,7 @@ img { max-width: 100%; display: block; }
   width: 34px; height: 34px;
   display: flex; align-items: center; justify-content: center;
   background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
-  color: rgba(255,255,255,.6); border-radius: 8px; font-size: .75rem;
+  color: rgba(255,255,255,.6); border-radius: 6px; font-size: .75rem;
   transition: var(--trans);
 }
 .ft-soc a:hover { background: var(--secondary); color: var(--white); border-color: var(--secondary); transform: translateY(-3px); }
@@ -713,7 +713,7 @@ img { max-width: 100%; display: block; }
 .fci {
   width: 30px; height: 30px;
   background: rgba(0,151,167,.15); color: var(--secondary);
-  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; display: flex; align-items: center; justify-content: center;
   font-size: .75rem; flex-shrink: 0; margin-top: 1px;
   transition: var(--trans);
 }
@@ -777,7 +777,7 @@ img { max-width: 100%; display: block; }
   .bu-item { font-size: .58rem; }
   .brand-logo { width: 56px; height: 56px; }
   .nav-list { flex-direction: column; align-items: stretch; width: 100%; gap: 0; }
-  .nav-link { padding: 12px 16px; border-radius: 8px; width: 100%; }
+  .nav-link { padding: 12px 16px; border-radius: 6px; width: 100%; }
   .drop-mega { position: static; box-shadow: none; border-radius: 0; min-width: 100%; border-top: none; padding: 12px 0 12px 16px; animation: none; }
   .mega-inner { flex-direction: column; gap: 16px; }
   .btn-appt { width: 100%; justify-content: center; margin: 12px 0 0; }
@@ -790,3 +790,4 @@ img { max-width: 100%; display: block; }
   .top-bar { display: none; }
   .about-feats { grid-template-columns: 1fr; }
 }
+
