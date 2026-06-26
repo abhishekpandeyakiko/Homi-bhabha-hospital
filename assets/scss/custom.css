@@ -44,3 +44,33 @@ button:not(.no-style):active,
 .btn:active {
   transform: translateY(0);
 }
+
+/* =============================================
+   SCREEN READER MODE
+   High contrast, large text accessibility styles
+   ============================================= */
+body.screen-reader-mode {
+  font-size: 20px !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0.03em;
+}
+
+body.screen-reader-mode * {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+body.screen-reader-mode a,
+body.screen-reader-mode button {
+  text-decoration: underline !important;
+  color: #00008B !important;
+  font-size: 1em !important;
+}
+
+body.screen-reader-mode img {
+  outline: 2px solid #000 !important;
+}

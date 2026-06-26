@@ -69,3 +69,39 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* =============================================
+   LAPTOP SCREEN FIX (1024px – 1280px)
+   Keep header in one line without wrapping
+   ============================================= */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  #siteHeader .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Shrink nav item padding on smaller laptops */
+  #siteHeader nav ul li a {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    font-size: 11px !important;
+  }
+
+  /* Slightly smaller appointment button */
+  #siteHeader .hidden.lg\\:flex a {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    font-size: 11px !important;
+  }
+
+  /* Scale down brand logo slightly */
+  #siteHeader .brand-logo {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+  }
+
+  /* Brand text tighter */
+  #siteHeader .brand-text span:first-child {
+    font-size: 12px !important;
+  }
+}

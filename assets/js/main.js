@@ -271,3 +271,87 @@ function initMain() {
 // Ensure it runs dynamically
 document.addEventListener('DOMContentLoaded', () => { setTimeout(initMain, 100); });
 window.addEventListener('componentsLoaded', () => { setTimeout(initMain, 100); });
+
+// =============================================
+// HEADER INLINE SEARCH
+// =============================================
+function openHeaderSearch() {
+  const searchBox = document.getElementById('headerSearchBox');
+  const input     = document.getElementById('headerSearchInput');
+  if (!searchBox) return;
+  // Show as flex overlay (position:absolute — no layout shift)
+  searchBox.style.display = 'flex';
+  if (input) { input.value = ''; input.focus(); }
+}
+
+function closeHeaderSearch() {
+  const searchBox = document.getElementById('headerSearchBox');
+  if (searchBox) searchBox.style.display = 'none';
+}
+
+function doHeaderSearch() {
+  const input = document.getElementById('headerSearchInput');
+  const query = input ? input.value.trim() : '';
+  if (query) {
+    // TODO: replace with real search redirect
+    console.log('Search:', query);
+    alert('Searching for: ' + query);
+  }
+  closeHeaderSearch();
+}
+
+// Close search on outside click
+document.addEventListener('click', function(e) {
+  const wrap = document.getElementById('headerSearchWrap');
+  if (wrap && !wrap.contains(e.target)) closeHeaderSearch();
+});
+
+// =============================================
+// LANGUAGE DROPDOWN
+// =============================================
+function toggleLangDropdown() {
+  const menu = document.getElementById('langDropdownMenu');
+  const chevron = document.getElementById('langChevron');
+  if (!menu) return;
+  const isHidden = menu.classList.contains('hidden');
+  menu.classList.toggle('hidden', !isHidden);
+  if (chevron) chevron.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+}
+
+function selectLang(label) {
+  const selected = document.getElementById('selectedLang');
+  if (selected) selected.textContent = label;
+  // Close dropdown
+  const menu = document.getElementById('langDropdownMenu');
+  const chevron = document.getElementById('langChevron');
+  if (menu) menu.classList.add('hidden');
+  if (chevron) chevron.style.transform = 'rotate(0deg)';
+}
+
+// Close lang dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  const wrap = document.querySelector('.lang-selector-wrap');
+  if (wrap && !wrap.contains(e.target)) {
+    const menu = document.getElementById('langDropdownMenu');
+    const chevron = document.getElementById('langChevron');
+    if (menu) menu.classList.add('hidden');
+    if (chevron) chevron.style.transform = 'rotate(0deg)';
+  }
+});
+
+// =============================================
+// SCREEN READER TOGGLE
+// =============================================
+let screenReaderOn = false;
+function toggleScreenReader() {
+  screenReaderOn = !screenReaderOn;
+  const label = document.getElementById('screenReaderLabel');
+
+  if (screenReaderOn) {
+    if (label) label.style.color = '#0D1B4E';
+    document.body.classList.add('screen-reader-mode');
+  } else {
+    if (label) label.style.color = '#6b85a3';
+    document.body.classList.remove('screen-reader-mode');
+  }
+}

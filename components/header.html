@@ -1,10 +1,10 @@
-﻿<link rel="stylesheet" href="assets/scss/header.css">
+<link rel="stylesheet" href="assets/scss/header.css">
 <!-- ===================================================
      LAYER 1: ALERT / NOTICE BAR
 ==================================================== -->
-<div class="bg-[#e8f4fd] border-b border-[#bee3f8] py-2.5 text-xs text-[#2d4a6e] relative z-50 hidden sm:block"
-  id="alertBar">
-  <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center gap-4">
+<div class="bg-[#e8f4fd] border-b border-[#bee3f8] py-2.5 text-xs text-[#2d4a6e] relative hidden sm:block" id="alertBar"
+  style="z-index: 9999; overflow: visible;">
+  <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center gap-4" style="overflow: visible;">
     <div class="flex items-center gap-4">
       <span class="flex items-center gap-1.5 font-medium">
         <span class="material-symbols-outlined text-secondary text-base">schedule</span>
@@ -16,13 +16,84 @@
         Helpline: +91-172-2290100
       </span>
     </div>
-    <div>
-      <a href="#appointment-section"
-        class="bg-primary text-white px-4 py-1.5 rounded-[6px] font-bold text-[11px] flex items-center gap-1.5 hover:bg-primary-dark transition-all active:scale-95 shadow-sm">
-        <span class="material-symbols-outlined text-xs">calendar_month</span>
-        Request An Appointment
-      </a>
-    </div>
+    <!-- Right side controls: Screen Reader + Language -->
+    <div class="flex items-center gap-3">
+
+      <!-- Screen Reader Label -->
+      <span style="font-size:11px; font-weight:700; color:#2d4a6e; letter-spacing:0.04em;">
+        Screen Reader
+      </span>
+
+      <span style="color: #bee3f8; font-size: 14px;">|</span>
+
+      <!-- Language Selector Dropdown -->
+      <div class="relative lang-selector-wrap" style="overflow: visible;">
+        <button id="langDropdownBtn" onclick="toggleLangDropdown()"
+          class="flex items-center gap-2 bg-white hover:bg-[#f0f7ff] border border-[#bee3f8] text-[#2d4a6e] px-3 py-1.5 rounded-[6px] text-[11px] font-bold transition-all shadow-sm select-none">
+          <span class="material-symbols-outlined text-[16px] text-[#007aff]">language</span>
+          <span id="selectedLang" class="tracking-wide">English</span>
+          <span class="material-symbols-outlined text-[16px] text-slate-400 transition-transform duration-200"
+            id="langChevron">expand_more</span>
+        </button>
+
+        <!-- Dropdown Menu — fixed z so it overlaps the sticky header below -->
+        <div id="langDropdownMenu" class="hidden"
+          style="position: absolute; right: 0; top: calc(100% + 8px); background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; min-width: 200px; box-shadow: 0 12px 32px rgba(10,28,48,0.13); z-index: 99999; overflow: hidden;">
+          <!-- Header label -->
+          <div style="padding: 10px 16px 8px; border-bottom: 1px solid #f1f5f9;">
+            <p
+              style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; margin: 0;">
+              Select Language</p>
+          </div>
+          <ul style="margin: 0; padding: 6px 0; list-style: none;">
+            <li>
+              <button onclick="selectLang('English')"
+                style="width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: none; border: none; cursor: pointer; text-align: left; transition: background 0.15s;"
+                onmouseover="this.style.background='#f0f7ff'" onmouseout="this.style.background='none'">
+                <span style="font-size: 20px; line-height: 1;">🇬🇧</span>
+                <span style="display: flex; flex-direction: column;">
+                  <span style="font-size: 13px; font-weight: 700; color: #0D1B4E;">English</span>
+                  <span style="font-size: 10px; color: #94a3b8; font-weight: 500;">International</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button onclick="selectLang('हिंदी')"
+                style="width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: none; border: none; cursor: pointer; text-align: left; transition: background 0.15s;"
+                onmouseover="this.style.background='#f0f7ff'" onmouseout="this.style.background='none'">
+                <span style="font-size: 20px; line-height: 1;">🇮🇳</span>
+                <span style="display: flex; flex-direction: column;">
+                  <span style="font-size: 13px; font-weight: 700; color: #0D1B4E;">हिंदी</span>
+                  <span style="font-size: 10px; color: #94a3b8; font-weight: 500;">Hindi</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button onclick="selectLang('मराठी')"
+                style="width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: none; border: none; cursor: pointer; text-align: left; transition: background 0.15s;"
+                onmouseover="this.style.background='#f0f7ff'" onmouseout="this.style.background='none'">
+                <span style="font-size: 20px; line-height: 1;">🇮🇳</span>
+                <span style="display: flex; flex-direction: column;">
+                  <span style="font-size: 13px; font-weight: 700; color: #0D1B4E;">मराठी</span>
+                  <span style="font-size: 10px; color: #94a3b8; font-weight: 500;">Marathi</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button onclick="selectLang('ਪੰਜਾਬੀ')"
+                style="width: 100%; display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: none; border: none; cursor: pointer; text-align: left; transition: background 0.15s;"
+                onmouseover="this.style.background='#f0f7ff'" onmouseout="this.style.background='none'">
+                <span style="font-size: 20px; line-height: 1;">🇮🇳</span>
+                <span style="display: flex; flex-direction: column;">
+                  <span style="font-size: 13px; font-weight: 700; color: #0D1B4E;">ਪੰਜਾਬੀ</span>
+                  <span style="font-size: 10px; color: #94a3b8; font-weight: 500;">Punjabi</span>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- end lang-selector-wrap -->
+    </div> <!-- end right-side controls wrapper -->
   </div>
 </div>
 
@@ -32,29 +103,32 @@
 <header
   class="w-full bg-white/95 backdrop-blur-md z-50 sticky top-0 transition-all duration-300 border-b border-slate-100 shadow-sm"
   id="siteHeader">
-  <div class="container mx-auto px-4 lg:px-4 flex items-center justify-between py-2">
+  <div class="container mx-auto px-4 lg:px-4 flex items-center justify-between gap-3 py-2">
 
     <!-- LOGO & BRAND DETAILS (Left aligned) -->
-    <a href="index.html" class="flex items-center flex-shrink-0">
+    <a href="index.html" class="flex items-center flex-shrink-0 min-w-0">
       <img src="assets/img/logo.png" alt="HBCH Logo"
-        class="brand-logo h-16 w-16 sm:h-20 sm:w-20 object-contain mr-4 transition-all duration-300" />
-      <div class="brand-text flex flex-col transition-all duration-300">
-        <span class="text-[12px] sm:text-[16px] font-black tracking-tight text-[#0D1B4E] leading-tight uppercase">
+        class="brand-logo h-14 w-14 sm:h-18 sm:w-18 lg:h-16 lg:w-16 object-contain mr-3 transition-all duration-300 flex-shrink-0" />
+      <div class="brand-text flex flex-col transition-all duration-300 min-w-0">
+        <span
+          class="text-[11px] sm:text-[13px] lg:text-[14px] font-black tracking-tight text-[#0D1B4E] leading-tight uppercase whitespace-nowrap">
           HOMI BHABHA CANCER HOSPITAL &amp; RC
         </span>
-        <span class="text-[10px] sm:text-[13px] font-bold text-brand-red leading-tight mt-0.5 font-devanagari">
+        <span
+          class="text-[9px] sm:text-[11px] lg:text-[12px] font-bold text-brand-red leading-tight mt-0.5 font-devanagari whitespace-nowrap">
           होमी भाभा कैंसर अस्पताल एवं अनुसंधान केंद्र
         </span>
-        <span class="text-[8px] sm:text-[10px] font-bold text-[#0097A7] uppercase tracking-wider mt-1 leading-none">
+        <span
+          class="text-[8px] sm:text-[9px] lg:text-[10px] font-bold text-[#0097A7] uppercase tracking-wider mt-1 leading-none whitespace-nowrap">
           A Unit of TATA MEMORIAL CENTRE
         </span>
       </div>
     </a>
 
     <!-- CENTER CAPSULE NAVIGATION (Desktop only) -->
-    <div class="hidden lg:block relative">
-      <nav class="bg-[#F4F8FC] border border-slate-200/50 rounded-[6px] px-5 py-2.5 flex items-center shadow-sm">
-        <ul class="flex items-center gap-1 relative">
+    <div class="hidden lg:block relative flex-shrink-0">
+      <nav class="bg-[#F4F8FC] border border-slate-200/50 rounded-[6px] px-3 xl:px-5 py-2 flex items-center shadow-sm">
+        <ul class="flex items-center gap-0 xl:gap-1 relative">
           <li class="relative">
             <a href="index.html"
               class="px-3.5 py-1 text-[12px] tracking-wider text-[#0D1B4E] hover:text-primary transition-all uppercase">Home</a>
@@ -258,13 +332,65 @@
       </nav>
     </div>
 
-    <!-- RIGHT BUTTONS (Search, Get Appointment, Menu Grid Icon) -->
-    <div class="hidden lg:flex items-center gap-3">
-      <!-- Search Trigger Button -->
-      <button
-        class="w-10 h-10 rounded-[6px] bg-[#F4F8FC] hover:bg-slate-200/50 text-[#0D1B4E] flex items-center justify-center transition-colors border border-slate-200/30">
-        <span class="material-symbols-outlined text-xl">search</span>
-      </button>
+    <!-- RIGHT BUTTONS (Search, Get Appointment) -->
+    <div class="hidden lg:flex items-center gap-2 flex-shrink-0">
+
+      <!-- Search Icon + Overlay Dropdown -->
+      <div id="headerSearchWrap" style="position:relative;">
+
+        <!-- Search Icon (always visible, no space change) -->
+        <button id="headerSearchIconBtn" onclick="openHeaderSearch()"
+          class="w-10 h-10 rounded-[26px] bg-[#F4F8FC] hover:bg-slate-200/50 text-[#0D1B4E] flex items-center justify-center transition-all border border-slate-200/30"
+          title="Search">
+          <span class="material-symbols-outlined text-xl">search</span>
+        </button>
+
+        <!-- Floating search overlay — compact single row -->
+        <div id="headerSearchBox" style="
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 0;
+            width: 300px;
+            background: #fff;
+            border: 1.5px solid #007aff;
+            border-radius: 26px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            z-index: 99999;
+            flex-direction: row;
+            align-items: center;
+          ">
+          <!-- Input -->
+          <input id="headerSearchInput" type="text" placeholder="Search..."
+            onkeydown="if(event.key==='Escape') closeHeaderSearch(); if(event.key==='Enter') doHeaderSearch();" style="
+              flex: 1;
+              border: none;
+              outline: none;
+              font-size: 13px;
+              font-weight: 600;
+              color: #0D1B4E;
+              background: #fff;
+              padding: 7px 10px;
+              font-family: inherit;
+            " />
+          <!-- Search Button -->
+          <button onclick="doHeaderSearch()" style="
+              background: #0f345c;
+              border: none;
+              cursor: pointer;
+              padding: 10px 14px;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              flex-shrink: 0;
+            " onmouseover="this.style.background='#0056cc'" onmouseout="this.style.background='#007aff'">
+            <span class="material-symbols-outlined" style="font-size: 18px;">search</span>
+          </button>
+        </div>
+
+      </div>
+
       <!-- Get Appointment button -->
       <a href="#appointment-section"
         class="bg-[#0D1B4E] hover:bg-primary text-white rounded-[6px] px-6 py-2.5 text-xs font-bold transition-all shadow-md flex items-center gap-2 hover:scale-105 active:scale-95">
@@ -276,12 +402,12 @@
     <!-- Mobile/Tablet Navigation Toggle (Visible below lg) -->
     <div class="flex lg:hidden items-center gap-4 py-3 flex-shrink-0">
       <a href="#appointment-section"
-        class="bg-primary text-white px-4 py-1.5 rounded-[6px] font-bold text-xs flex items-center gap-1 hover:bg-primary-dark transition-all active:scale-95 shadow-sm">
-        <span class="material-symbols-outlined text-xs">calendar_month</span>
-        Appointment
+        class="bg-primary text-white sm:px-4 px-2.5 py-2 sm:py-1.5 rounded-[6px] font-bold text-xs flex items-center gap-1 hover:bg-primary-dark transition-all active:scale-95 shadow-sm">
+        <span class="material-symbols-outlined text-base sm:text-xs">calendar_month</span>
+        <span class="hidden sm:inline">Appointment</span>
       </a>
-      <button onclick="toggleMobileMenu()" class="text-dark-navy p-2 hover:bg-slate-100 rounded-[6px] focus:outline-none"
-        aria-label="Toggle Menu">
+      <button onclick="toggleMobileMenu()"
+        class="text-dark-navy p-2 hover:bg-slate-100 rounded-[6px] focus:outline-none" aria-label="Toggle Menu">
         <span class="material-symbols-outlined text-3xl">menu</span>
       </button>
     </div>
