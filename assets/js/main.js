@@ -145,7 +145,7 @@ function initMain() {
       const startAutoSlide = () => {
         window.servicesAutoSlideInterval = setInterval(() => {
           window.scrollCarousel(1); // 1 indicates 'next'
-        }, 3500);
+        }, 6000);
       };
 
       const stopAutoSlide = () => {
